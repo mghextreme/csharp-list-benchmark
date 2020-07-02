@@ -10,19 +10,19 @@ namespace ListBenchmark
         private IList<int> _lista = new int[1000].ToList();
 
         [Benchmark]
-        public bool ListMetodoAny()
+        public bool ListAnyMethod()
         {
             return _lista.Any();
         }
 
         [Benchmark]
-        public bool ListPropriedadeCount()
+        public bool ListCountProperty()
         {
             return _lista.Count != 0;
         }
 
         [Benchmark]
-        public bool ListMetodoCount()
+        public bool ListCountMethod()
         {
             return _lista.Count() != 0;
         }

@@ -10,13 +10,13 @@ namespace ListBenchmark
         private IEnumerable<int> _enumerable = new int[1000];
 
         [Benchmark]
-        public bool EnumerableMetodoAny()
+        public bool EnumerableAnyMethod()
         {
             return _enumerable.Any();
         }
 
         [Benchmark]
-        public bool EnumerableMetodoCount()
+        public bool EnumerableCountMethod()
         {
             return _enumerable.Count() != 0;
         }

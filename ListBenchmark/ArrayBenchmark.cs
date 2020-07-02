@@ -9,19 +9,19 @@ namespace ListBenchmark
         private int[] _array = new int[1000];
 
         [Benchmark]
-        public bool ArrayMetodoAny()
+        public bool ArrayAnyMethod()
         {
             return _array.Any();
         }
 
         [Benchmark]
-        public bool ArrayPropriedadeLenth()
+        public bool ArrayLenthProperty()
         {
             return _array.Length != 0;
         }
 
         [Benchmark]
-        public bool ArrayMetodoCount()
+        public bool ArrayCountMethod()
         {
             return _array.Count() != 0;
         }

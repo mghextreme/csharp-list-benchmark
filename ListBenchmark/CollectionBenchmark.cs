@@ -10,19 +10,19 @@ namespace ListBenchmark
         private ICollection<int> _collection = new int[1000];
 
         [Benchmark]
-        public bool CollectionMetodoAny()
+        public bool CollectionAnyMethod()
         {
             return _collection.Any();
         }
 
         [Benchmark]
-        public bool CollectionPropriedadeCount()
+        public bool CollectionCountProperty()
         {
             return _collection.Count != 0;
         }
 
         [Benchmark]
-        public bool CollectionMetodoCount()
+        public bool CollectionCountMethod()
         {
             return _collection.Count() != 0;
         }
